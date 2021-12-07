@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon quiz</title>
+    <link rel='stylesheet' href = "./Assets/style.css">
+</head>
+<body>
+    <div class="quiz" id="quiz">
+        <div class="timer hide" id="timerContainer">
+            <p id="timer">45</p>
+        </div>
+        <header>
+        <h1>
+            Who's that Pokémon!
+        </h1>
+        </header> 
+        <div class="container">
+            <div class="hide" id="questionContainer">
+                <p id="question">
+                    
+                </p>
+    
+                <div id="answer-container" >
+                <button class="answer-btn"></button>
+                
+                </div>
+            </div>
+            
+            <div class="control">
+                <button id="start-btn" class="start-btn">Guess'em all</button>
+    
+            </div>
+        </div>
+    </div>
+    <div class="endGame hide" id="endGame">
+    <div class="highScore">
+        <h2>HighScore</h2>
+        <div id="initial"></div>
+        <div id="score"></div>
+        <form id="initialForm">
+            <label for="initialText">Trainer name: </label>
+        <input type="text" placeholder="_ _ _ _ _" maxlength="5" name="initialText" id="initialText">
+        </form>
+    </div>
+    
+    </div>
+        <script src="./Assets/script.js"></script>
+</body>
+</html>
